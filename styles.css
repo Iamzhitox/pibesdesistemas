@@ -5,6 +5,13 @@ body {
     background-attachment: fixed;
 }
 
+@media (min-width: 1200px) {
+    body {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
 h2 {
     color: rgb(202, 202, 202);
     padding-left: .5rem;
