@@ -1,0 +1,106 @@
+body {
+    height: 100vh;
+    font-family: lato;
+    background: linear-gradient(to bottom, rgb(0, 91, 119), rgb(0, 25, 34));
+    background-attachment: fixed;
+}
+
+h2 {
+    color: rgb(202, 202, 202);
+    padding-left: .5rem;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+#cabecera {
+
+}
+
+#cabecera #icon {
+    display: block;
+    margin: 2rem auto 2rem auto;
+    align-items: center;
+    width: 6rem;
+}
+
+#comisiones {
+
+}
+
+
+.comision {
+    background-color: rgba(255, 255, 255, 0.576);
+    padding: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(0, 53, 53);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.comision:active {
+    background-color: rgba(255, 255, 255, 0.679);
+    scale: 0.95;
+}
+
+.canal {
+    padding: 1rem;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.049);
+    margin-bottom: .5rem;
+    display: flex;
+    border-radius: .5rem;
+}
+
+.canal img {
+    width: 5rem;
+}
+
+.wsp {
+    color: white;
+    background-color: rgba(66, 234, 97, 0.796);
+}
+
+.dis {
+    color: rgb(87, 108, 186);
+    background-color: rgba(255, 255, 255, 0.953);
+}
+
+.desc {
+    width: 100%;
+    margin-left: 1rem;
+    text-align: left;
+    align-items: center;
+}
+
+.desc .boton {
+    padding: .5rem;
+    text-align: center;
+    background-color: rgb(230, 230, 230);
+    border-radius: .7rem;
+    color: rgba(0, 0, 0, 0.549);
+    font-weight: 700;
+    box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.494);
+}
+.desc .boton:active {
+    scale: 0.95;
+}
+
+.desc h3 {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+
+
+
+#horarios img {
+    width: 100%;
+}
