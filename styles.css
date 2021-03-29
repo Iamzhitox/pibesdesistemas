@@ -1,14 +1,14 @@
 body {
-    background-size: cover;
+    height: 100vh;
     font-family: lato;
     background: linear-gradient(to bottom, rgb(0, 91, 119), rgb(0, 25, 34));
-    background-attachment: fixed;
 }
 
 @media (min-width: 1200px) {
     body {
         margin-left: 30%;
         margin-right: 30%;
+        background-attachment: fixed;
     }
 }
 
