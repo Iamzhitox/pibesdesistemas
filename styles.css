@@ -15,15 +15,19 @@ body {
 
 #back {
     color: white;
-    position: absolute;
+    position: fixed;
     top: 1rem;
     left: 1rem;
-    padding: 1rem 1.5rem;
+    padding: .5rem 1rem;
     font-size: 1.5rem;
     font-weight: 700;
     font-family: lato;
     border-radius: 20rem;
     background-color: rgba(0, 0, 0, 0.501);
+}
+
+#back:active {
+    scale: 0.9;
 }
 
 h2 {
@@ -62,6 +66,14 @@ a {
     border-radius: .5rem;
     cursor: pointer;
 }
+
+@media (min-width: 1200px) {
+    .comision:hover {
+        box-shadow: 0 .3rem 1.3rem rgb(0, 0, 0);
+        transition: .3s;
+    }
+}
+
 
 .comision:active {
     background-color: rgba(255, 255, 255, 0.679);
@@ -107,6 +119,16 @@ a {
     font-weight: 700;
     box-shadow: 0 0 .8rem rgba(0, 0, 0, 0.494);
 }
+
+@media (min-width: 1200px) {
+    .desc .boton {
+        display: block;
+        margin: auto;
+        width: 17rem;
+    }
+}
+
+
 .desc .boton:active {
     scale: 0.95;
 }
@@ -118,7 +140,17 @@ a {
     text-align: center;
 }
 
+#mails .container-mail {
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, 0.645);
+}
 
+.container-mail a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
 
 
 
