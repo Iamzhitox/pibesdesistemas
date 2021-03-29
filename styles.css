@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 100%;
     font-family: lato;
     background: linear-gradient(to bottom, rgb(0, 91, 119), rgb(0, 25, 34));
 }
