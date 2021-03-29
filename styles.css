@@ -18,12 +18,12 @@ body {
     position: absolute;
     top: 1rem;
     left: 1rem;
-    padding: 1rem;
+    padding: 1rem 1.5rem;
     font-size: 1.5rem;
     font-weight: 700;
     font-family: lato;
-    border-radius: 1rem;
-    background-color: teal;
+    border-radius: 20rem;
+    background-color: rgba(0, 0, 0, 0.501);
 }
 
 h2 {
