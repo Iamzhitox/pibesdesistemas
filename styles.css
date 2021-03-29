@@ -7,8 +7,8 @@ body {
 
 @media (min-width: 1200px) {
     body {
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 32%;
+        margin-right: 32%;
         background-attachment: fixed;
     }
 }
@@ -124,7 +124,7 @@ a {
     .desc .boton {
         display: block;
         margin: auto;
-        width: 17rem;
+        width: 15rem;
     }
 }
 
