@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Todo lo que nececitás saber en un sólo lugar" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTNianos 2021</title>
+    <link rel="shortcut icon" href="logo_utn.png" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="clasesrec">
+
+    <header id="cabecera" class="cabecera">
+        <img id="icon" src="utn.png" alt="">
+    </header>
+
+    <a href="index.html"><div id="back">&lt</div></a>
+
+    <section id="lista">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'class1')">Clase #1</button>
+            <button class="tablinks" onclick="openCity(event, 'class2')">Clase #2</button>
+            <button class="tablinks" onclick="openCity(event, 'class3')">Clase #3</button>
+        </div>
+          
+          <div id="class1" class="tabcontent">
+            <iframe class="video" frameborder="0" src="https://mega.nz/embed/hEtFTS7T#jh_ySNuGjEzdaMJhnW3PPTBzjZakMgZTfOOoLIwBb3Y" allowfullscreen></iframe>
+            <h2>Clase #1 | Sistemas Numéricos ( Binario/Octal/Decimal/Hexadecimal )</h2>
+          </div>
+          
+          <div id="class2" class="tabcontent">
+            <h2 class="video">No Disponible</h2>
+        </div>
+          
+          <div id="class3" class="tabcontent">
+            <h2 class="video">No Disponible</h2>
+          </div>
+    </section>
+
+    <script>
+        function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+
+  
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the link that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
+</body>
+</html>
