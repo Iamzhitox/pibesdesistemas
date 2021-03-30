@@ -277,7 +277,7 @@ a {
 @media (max-width: 1200px) {
     .video {
         display: block;
-        height: 15rem;
+        height: 12rem;
         width: 100%;
     }
     
@@ -292,6 +292,7 @@ a {
 @media (max-width: 1200px) {
     .tabcontent h2 {
         font-size: .8rem;
+        padding-bottom: 3rem;
         margin-bottom: 3rem;
     }
     
