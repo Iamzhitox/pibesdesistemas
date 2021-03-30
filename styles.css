@@ -27,6 +27,9 @@ body {
     #clasesrec {
         margin: 0;
     }
+    #clasesrec #cabecera #icon{
+        width: 8rem;
+    }
 
 }
 
