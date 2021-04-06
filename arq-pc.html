@@ -21,50 +21,82 @@
 
     <a href="index.html"><div id="back">&lt</div></a>
 
-    <section id="lista">
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'class1')">Clase #1</button>
-            <button class="tablinks" onclick="openCity(event, 'class2')">Clase #2</button>
-            <button class="tablinks" onclick="openCity(event, 'class3')">Clase #3</button>
-        </div>
-          
-          <div id="class1" class="tabcontent">
-            <iframe class="video" frameborder="0" src="https://mega.nz/embed/hEtFTS7T#jh_ySNuGjEzdaMJhnW3PPTBzjZakMgZTfOOoLIwBb3Y" allowfullscreen></iframe>
-            <h2>Clase #1 | Sistemas Numéricos ( Binario/Octal/Decimal/Hexadecimal )</h2>
-          </div>
-          
-          <div id="class2" class="tabcontent">
-            <h2 class="video">No Disponible</h2>
-        </div>
-          
-          <div id="class3" class="tabcontent">
-            <h2 class="video">No Disponible</h2>
-          </div>
+    <section id="listas">
+
+      <button class="accordion">Clase #1</button>
+      <div class="panel">
+        <iframe class="video" src="https://www.youtube.com/embed/bqsCnoHaRIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <button class="accordion">Clase #2</button>
+      <div class="panel">
+        <iframe class="video" src="https://www.youtube.com/embed/GwIeE4yYiAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      
+      </div>
+
+      <button class="accordion">Clase #3</button>
+      <div class="panel">
+
+      </div>
+
+      <button class="accordion">Clase #4</button>
+      <div class="panel">
+
+      </div>
+
+      <button class="accordion">Clase #5</button>
+      <div class="panel">
+
+      </div>
+
+      <button class="accordion">Clase #6</button>
+      <div class="panel">
+
+      </div>
+
+      <button class="accordion">Clase #7</button>
+      <div class="panel">
+
+      </div>
+
+      <button class="accordion">Clase #8</button>
+      <div class="panel">
+
+      </div>
+
+      <button class="accordion">Clase #9</button>
+      <div class="panel">
+
+      </div>
+
+      <button class="accordion">Clase #10</button>
+      <div class="panel">
+
+      </div>
+
+
+      
+
+
     </section>
 
+
     <script>
-        function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+      var acc = document.getElementsByClassName("accordion");
+    var i;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
 
-  
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the link that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+    });
+    } 
     </script>
+
 </body>
 </html>

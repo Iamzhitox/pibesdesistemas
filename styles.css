@@ -18,20 +18,15 @@ body {
     }
 
     #clasesrec {
-        margin-left: 8%;
-        margin-right: 8%;
+        background: linear-gradient(to bottom, rgb(0, 91, 119), rgb(0, 25, 34));
+        margin-left: 23%;
+        margin-right: 23%;
+        margin-bottom: 0;
+        background-repeat: no-repeat;
+
     }
 }
 
-@media (max-width: 1200px) {
-    #clasesrec {
-        margin: 0;
-    }
-    #clasesrec #cabecera #icon{
-        width: 8rem;
-    }
-
-}
 
 
 #back {
@@ -193,111 +188,48 @@ a {
 
 /*Listas*/
 
-#lista {
+.accordion {
+    background-color: #eee;
+    color: #444;
+    font-family: lato;
+    cursor: pointer;
+    padding: 1.5rem;
     width: 100%;
-    padding-bottom: 10rem;
-    margin-top: 3rem;
-}
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid rgb(184, 184, 184);
+  }
 
-
-* {box-sizing: border-box}
-
-/* Style the tab */
-.tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  height: 100%;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 1.2rem 1.2rem;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-family: lato;
-  font-weight: 700;
-  transition: 0.3s;
-}
-
-@media (max-width: 1200px) {
-    .tab button {
-        padding: .8rem .2rem;
-        font-size: .6rem;
-    }
-}
-
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  float: left;
-  padding: 0px 0 0 .5rem;
-  width: 90%;
-  border-left: none;
-}
-
-@media (max-width: 1200px) {
-    .tabcontent {
-        padding: 0;
-        width: 86%;
-        margin: 0;
-    }
-
-}
-
-#class1 {
-    display: block;
-}
+  @media (min-width: 1200px) {
+      .accordion {
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1.2rem;
+      }
+  }
 
 
 
+  .video {
+      width: 100%;
+      height: 12rem;
+  }
+
+  @media (min-width: 1200px) {
+      .video {
+        height: 22rem;
+      }
+  }
 
 
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
 
-.video {
-    display: block;
-    width: 93%;
-    height: 30rem;
-    background-color: rgba(0, 0, 0, 0.352);
-}
-
-@media (max-width: 1200px) {
-    .video {
-        display: block;
-        height: 12rem;
-        width: 100%;
-    }
-    
-}
-
-
-.tabcontent h2 {
-    font-size: 1.5rem;
-    margin-bottom: 5rem;
-}
-
-@media (max-width: 1200px) {
-    .tabcontent h2 {
-        font-size: .8rem;
-        padding-bottom: 3rem;
-        margin-bottom: 3rem;
-    }
-    
-}
+  .panel {
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
