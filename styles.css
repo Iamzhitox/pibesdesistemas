@@ -219,6 +219,14 @@ a {
     margin: 2rem;
 }
 
+.asesorar a {
+    padding: .5rem 1rem;
+    background-color: rgb(139, 139, 139);
+    border-radius: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
 
   .video {
       width: 100%;
