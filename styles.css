@@ -289,6 +289,10 @@ a {
       border-radius: .5rem;
   }
 
+  .tOp a {
+      color: white;
+  }
+
   @media (min-width: 1200px) {
     .panel .tOp {
         margin-top: .8rem;
